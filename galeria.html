@@ -103,7 +103,8 @@
             <div style="margin-top: 1rem;">
                 <button onclick="document.getElementById('miVideo').play()" style="padding: 10px 20px; background: #3d2817; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">▶ Play</button>
                 <button onclick="document.getElementById('miVideo').pause()" style="padding: 10px 20px; background: #5c4033; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">⏸ Pausa</button>
-                <button onclick="toggleMute()" id="muteBtn" style="padding: 10px 20px; background: #c4a35a; color: white; border: none; border-radius: 5px; cursor: pointer;">🔊 Sonido</button>
+                <button onclick="toggleMute()" id="muteBtn" style="padding: 10px 20px; background: #c4a35a; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">🔊 Sonido</button>
+                <button onclick="toggleFullscreen()" style="padding: 10px 20px; background: #8b6914; color: white; border: none; border-radius: 5px; cursor: pointer;">⛶ Pantalla completa</button>
             </div>
             <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-top: 1rem; color: #3d2817;">Raigal con Hexacorde en Maello, Ávila</h3>
             <p style="color: #7a5c45;">IX Certamen de dulzaina Félix El Talao</p>
@@ -120,6 +121,17 @@
         } else {
             video.muted = true;
             btn.textContent = '🔇 Mute';
+        }
+    }
+    
+    function toggleFullscreen() {
+        var video = document.getElementById('miVideo');
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
         }
     }
     </script>
@@ -156,6 +168,11 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Raigal Danza. Todos los derechos reservados.</p>
+                <p style="margin-top: 0.5rem;">
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+                    </a>
+                </p>
             </div>
         </div>
     </footer>
