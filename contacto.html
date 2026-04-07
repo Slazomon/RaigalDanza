@@ -84,7 +84,20 @@
                     <div class="contact-icon">📧</div>
                     <div>
                         <p>Email</p>
-                        <p><a href="mailto:raigal.pulse@gmail.com" style="color: var(--brown-light);">raigal.pulse@gmail.com</a></p>
+                        <p style="display: flex; align-items: center; gap: 8px;">
+                            <a href="mailto:raigal.pulse@gmail.com" style="color: var(--brown-light);">raigal.pulse@gmail.com</a>
+                            <button onclick="copyToClipboard('raigal.pulse@gmail.com')" style="background: none; border: 1px solid var(--border-light); border-radius: 4px; padding: 2px 6px; cursor: pointer; font-size: 0.8rem;" title="Copiar">📋</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <p>Teléfono</p>
+                        <p style="display: flex; align-items: center; gap: 8px;">
+                            <a href="tel:+34699715336" style="color: var(--brown-light);">+34 699 71 53 36</a>
+                            <button onclick="copyToClipboard('+34699715336')" style="background: none; border: 1px solid var(--border-light); border-radius: 4px; padding: 2px 6px; cursor: pointer; font-size: 0.8rem;" title="Copiar">📋</button>
+                        </p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -146,5 +159,14 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copiado al portapapeles: ' + text);
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
