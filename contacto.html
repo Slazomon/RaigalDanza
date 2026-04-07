@@ -77,6 +77,28 @@
     </section>
 
     <section class="container">
+        <h2 class="section-title fade-in">Solicita una <span>Contratación</span></h2>
+        <form class="contact-form fade-in" action="https://formspree.io/f/xvzvleyz" method="POST" target="_blank" style="max-width: 600px; margin: 0 auto; background: var(--white-light); padding: 2rem; border-radius: 20px; border: 1px solid var(--border-light);">
+            <input type="text" name="nombre" placeholder="Tu nombre" required style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 2px solid var(--border-light); border-radius: 10px; background: var(--white); color: var(--brown-dark);">
+            <input type="email" name="email" placeholder="Tu email" required style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 2px solid var(--border-light); border-radius: 10px; background: var(--white); color: var(--brown-dark);">
+            <input type="tel" name="telefono" placeholder="Tu teléfono" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 2px solid var(--border-light); border-radius: 10px; background: var(--white); color: var(--brown-dark);">
+            <select name="tipo_evento" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 2px solid var(--border-light); border-radius: 10px; background: var(--white); color: var(--brown-dark);">
+                <option value="">Tipo de evento</option>
+                <option value="funcion_privada">Función privada</option>
+                <option value="evento_corporativo">Evento corporativo</option>
+                <option value="boda">Boda / Celebración</option>
+                <option value="workshop">Workshop / Clase</option>
+                <option value="otro">Otro</option>
+            </select>
+            <textarea name="mensaje" placeholder="Cuéntanos sobre tu evento..." rows="5" required style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 2px solid var(--border-light); border-radius: 10px; background: var(--white); color: var(--brown-dark); resize: vertical;"></textarea>
+            <input type="hidden" name="_subject" value="Nueva solicitud de contratación">
+            <input type="hidden" name="_next" value="contacto.html">
+            <button type="submit" style="width: 100%; padding: 1.2rem; background: var(--brown-dark); border: 2px solid var(--brown-dark); border-radius: 10px; color: var(--white); font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;">Enviar Solicitud</button>
+        </form>
+        <p style="text-align: center; margin-top: 1rem; color: var(--brown-light); font-size: 0.9rem;">Al hacer clic en enviar se abrirá una página de verificación (CAPTCHA).</p>
+    </section>
+
+    <section class="container">
         <h2 class="section-title fade-in">Escríbenos</h2>
         <div class="contact-info fade-in" style="max-width: 600px; margin: 0 auto;">
                 <h3>Información de Contacto</h3>
