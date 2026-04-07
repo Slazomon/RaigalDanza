@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Raigal Danza</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/main/favicon.png" type="image/png">
 </head>
 <body>
     <!-- Enredaderas decorativas -->
@@ -52,7 +52,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" alt="Raigal Danza" class="logo-img">
+                <img src="images/main/logo.png" alt="Raigal Danza" class="logo-img">
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Inicio</a></li>
@@ -69,7 +69,7 @@
         </div>
     </nav>
 
-    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images/company/fondo.jpg') center/cover no-repeat;">
+    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images/main/fondo.jpg') center/cover no-repeat;">
         <div class="hero-content">
             <h1>Nuestra <span>Galería</span></h1>
             <p>Capturando momentos de arte y movimiento</p>
@@ -80,16 +80,31 @@
         <h2 class="section-title fade-in">Fotos de <span>Eventos</span></h2>
         <div class="gallery-grid">
             <div class="gallery-item fade-in">
-                <img src="images/company/1.jpg" alt="Show 1">
+                <img src="images/company/c001.jpg" alt="Show 1">
             </div>
             <div class="gallery-item fade-in">
-                <img src="images/company/2.jpg" alt="Show 2">
+                <img src="images/company/c002.jpg" alt="Show 2">
             </div>
             <div class="gallery-item fade-in">
-                <img src="images/company/3.jpg" alt="Show 3">
+                <img src="images/company/c003.jpg" alt="Show 3">
             </div>
             <div class="gallery-item fade-in">
-                <img src="images/company/4.jpg" alt="Show 4">
+                <img src="images/company/e001.jpg" alt="Show 4">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="images/company/e002.jpg" alt="Show 5">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="images/company/e003.jpg" alt="Show 6">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="images/company/e004.jpg" alt="Show 7">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="images/company/e005.jpg" alt="Show 8">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="images/company/e006.jpg" alt="Show 9">
             </div>
         </div>
     </section>
@@ -100,10 +115,10 @@
             <video id="miVideo" width="100%" poster="videos/raigal_hexacorde_thumb.jpg" style="border-radius: 15px; border: 3px solid #dee2e6;">
                 <source src="videos/raigal_hexacorde.mp4" type="video/mp4">
             </video>
-            <div style="margin-top: 1rem;">
-                <button onclick="document.getElementById('miVideo').play()" style="padding: 10px 20px; background: #3d2817; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">▶ Play</button>
-                <button onclick="document.getElementById('miVideo').pause()" style="padding: 10px 20px; background: #5c4033; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">⏸ Pausa</button>
-                <button onclick="toggleMute()" id="muteBtn" style="padding: 10px 20px; background: #c4a35a; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">🔊 Sonido</button>
+            <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="document.getElementById('miVideo').play()" style="padding: 10px 20px; background: #3d2817; color: white; border: none; border-radius: 5px; cursor: pointer;">▶ Play</button>
+                <button onclick="document.getElementById('miVideo').pause()" style="padding: 10px 20px; background: #5c4033; color: white; border: none; border-radius: 5px; cursor: pointer;">⏸ Pausa</button>
+                <button onclick="toggleMute()" id="muteBtn" style="padding: 10px 20px; background: #c4a35a; color: white; border: none; border-radius: 5px; cursor: pointer;">🔊 Sonido</button>
                 <button onclick="toggleFullscreen()" style="padding: 10px 20px; background: #8b6914; color: white; border: none; border-radius: 5px; cursor: pointer;">⛶ Pantalla completa</button>
             </div>
             <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-top: 1rem; color: #3d2817;">Raigal con Hexacorde en Maello, Ávila</h3>
@@ -162,7 +177,7 @@
                 <div class="footer-section">
                     <h4>Síguenos</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/ciaraigaldanza" target="_blank" title="Instagram">📷</a>
+                        <a href="https://www.instagram.com/ciaraigaldanza" target="_blank" title="Instagram"><img src="images/main/instagram_icon.png" alt="Instagram" style="width:20px;height:20px;"></a>
                     </div>
                 </div>
             </div>

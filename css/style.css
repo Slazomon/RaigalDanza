@@ -448,6 +448,10 @@ section {
     box-shadow: 0 10px 30px rgba(61, 40, 23, 0.1);
 }
 
+.event-card img {
+    display: block;
+}
+
 .event-date {
     background: var(--brown-dark);
     padding: 1rem 1.5rem;
@@ -629,6 +633,13 @@ footer {
     font-family: 'Playfair Display', serif;
 }
 
+.footer-section h4 {
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
 .footer-section ul li {
     margin-bottom: 0.8rem;
 }
@@ -711,6 +722,63 @@ footer {
     color: var(--accent-gold);
 }
 
+/* Event Banner */
+.event-banner {
+    display: flex;
+    background: var(--white-light);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid var(--accent-gold);
+    box-shadow: 0 10px 40px rgba(61, 40, 23, 0.15);
+    margin-top: 40px;
+}
+
+.event-banner-content {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-label {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.event-banner-content h2 {
+    font-size: 2rem;
+    color: var(--brown-dark);
+    margin-bottom: 0.8rem;
+}
+
+.event-banner-content p {
+    color: var(--brown-light);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.event-banner-image {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.event-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -746,6 +814,20 @@ footer {
     
     .contact-wrapper {
         gap: 40px;
+    }
+    
+    .event-banner {
+        flex-direction: column;
+    }
+    
+    .event-banner-image {
+        min-width: 100%;
+        max-width: 100%;
+        height: 300px;
+    }
+    
+    .event-banner-content {
+        padding: 2rem;
     }
 }
 

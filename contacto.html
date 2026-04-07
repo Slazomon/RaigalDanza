@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Raigal Danza</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/main/favicon.png" type="image/png">
 </head>
 <body>
     <!-- Enredaderas decorativas -->
@@ -52,7 +52,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" alt="Raigal Danza" class="logo-img">
+                <img src="images/main/logo.png" alt="Raigal Danza" class="logo-img">
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Inicio</a></li>
@@ -69,7 +69,7 @@
         </div>
     </nav>
 
-    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images/company/fondo.jpg') center/cover no-repeat;">
+    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images/main/fondo.jpg') center/cover no-repeat;">
         <div class="hero-content">
             <h1>Contáct<span>anos</span></h1>
             <p>Estamos listos para hacer de tu evento algo especial</p>
@@ -78,21 +78,22 @@
 
     <section class="container">
         <h2 class="section-title fade-in">Escríbenos</h2>
-        <div class="contact-wrapper">
-            <div class="contact-info fade-in">
+        <div class="contact-info fade-in" style="max-width: 600px; margin: 0 auto;">
                 <h3>Información de Contacto</h3>
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
                     <div>
                         <p>Email</p>
-                        <p>raigal.pulse@gmail.com</p>
+                        <p><a href="mailto:raigal.pulse@gmail.com" style="color: var(--brown-light);">raigal.pulse@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-icon">📱</div>
+                    <div class="contact-icon" style="display: flex; align-items: center; justify-content: center;">
+                        <img src="images/main/instagram_icon.png" alt="Instagram" style="width:24px;height:24px;">
+                    </div>
                     <div>
                         <p>Instagram</p>
-                        <p>@raigaldanza</p>
+                        <p><a href="https://www.instagram.com/ciaraigaldanza" target="_blank" style="color: var(--brown-light);">@ciaraigaldanza</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -100,56 +101,11 @@
                     <div>
                         <p>Empresa</p>
                         <p>RAIGAL PULSE S.L</p>
+                        <p style="font-size: 0.9rem;">CIF: B22979249</p>
                     </div>
                 </div>
                 
-                <h3 style="margin-top: 2rem;">Síguenos en redes</h3>
-                <div class="social-links" style="margin-top: 1rem;">
-                    <a href="https://www.instagram.com/ciaraigaldanza" target="_blank" title="Instagram">📷</a>
-                </div>
-            </div>
-            
-            <form class="contact-form fade-in" id="contact-form" action="mailto:raigal.pulse@gmail.com" method="post" enctype="text/plain">
-                <div class="form-group">
-                    <label for="name">Nombre completo</label>
-                    <input type="text" id="name" name="name" placeholder="Tu nombre">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Teléfono (opcional)</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+52 55 1234 5678">
-                </div>
-                <div class="form-group">
-                    <label for="type">Tipo de evento</label>
-                    <select id="type" name="type">
-                        <option value="">Selecciona una opción</option>
-                        <option value="private">Función privada</option>
-                        <option value="corporate">Evento corporativo</option>
-                        <option value="wedding">Boda / Celebración</option>
-                        <option value="workshop">Workshop / Clase</option>
-                        <option value="other">Otro</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" placeholder="Cuéntanos sobre tu evento..."></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
-
-    <section class="container">
-        <h2 class="section-title fade-in">Nuestra <span>Ubicación</span></h2>
-        <div class="fade-in" style="border-radius: 20px; overflow: hidden; height: 350px; background: #f8f9fa; display: flex; align-items: center; justify-content: center; border: 1px solid #dee2e6;">
-            <div style="text-align: center;">
-                <p style="font-size: 2rem; color: #3d2817;">📍</p>
-                <p style="color: #5c4033;">Contáctanos por email o Instagram</p>
-                <p style="color: #7a5c45;">Estamos para servirte</p>
-            </div>
+                
         </div>
     </section>
 
@@ -174,7 +130,7 @@
                 <div class="footer-section">
                     <h4>Síguenos</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/ciaraigaldanza" target="_blank" title="Instagram">📷</a>
+                        <a href="https://www.instagram.com/ciaraigaldanza" target="_blank" title="Instagram"><img src="images/main/instagram_icon.png" alt="Instagram" style="width:20px;height:20px;"></a>
                     </div>
                 </div>
             </div>
