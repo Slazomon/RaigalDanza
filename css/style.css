@@ -40,8 +40,6 @@ body {
 /* Imágenes protegidas */
 img {
     -webkit-user-drag: none;
-    user-drag: none;
-}
 }
 
 /* Decorative vines SVG */
