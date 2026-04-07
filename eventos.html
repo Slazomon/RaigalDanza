@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Raigal Danza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💃</text></svg>">
+</head>
+<body>
+    <!-- Enredaderas decorativas -->
+    <div class="vine-decoration vine-left">
+        <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0 Q30 30 50 60 Q70 90 50 120 Q30 150 50 180 Q70 200 50 200" stroke="#c4a35a" stroke-width="2" fill="none"/>
+            <path d="M50 20 Q20 15 10 35" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 40 Q80 35 90 55" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 60 Q25 55 15 75" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 80 Q75 75 85 95" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 100 Q20 95 10 115" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 120 Q80 115 90 135" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <ellipse cx="10" cy="35" rx="6" ry="10" fill="#c4a35a"/>
+            <ellipse cx="90" cy="55" rx="6" ry="10" fill="#c4a35a" transform="rotate(30 90 55)"/>
+            <ellipse cx="15" cy="75" rx="6" ry="10" fill="#c4a35a" transform="rotate(-20 15 75)"/>
+            <ellipse cx="85" cy="95" rx="6" ry="10" fill="#c4a35a" transform="rotate(40 85 95)"/>
+            <ellipse cx="10" cy="115" rx="6" ry="10" fill="#c4a35a" transform="rotate(-30 10 115)"/>
+            <ellipse cx="90" cy="135" rx="6" ry="10" fill="#c4a35a" transform="rotate(20 90 135)"/>
+            <circle cx="50" cy="180" r="4" fill="#c4a35a"/>
+            <circle cx="45" cy="160" r="3" fill="#c4a35a"/>
+            <circle cx="55" cy="170" r="3" fill="#c4a35a"/>
+        </svg>
+    </div>
+    <div class="vine-decoration vine-right">
+        <svg viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0 Q30 30 50 60 Q70 90 50 120 Q30 150 50 180 Q70 200 50 200" stroke="#c4a35a" stroke-width="2" fill="none"/>
+            <path d="M50 20 Q20 15 10 35" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 40 Q80 35 90 55" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 60 Q25 55 15 75" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 80 Q75 75 85 95" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 100 Q20 95 10 115" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <path d="M50 120 Q80 115 90 135" stroke="#c4a35a" stroke-width="1.5" fill="none"/>
+            <ellipse cx="10" cy="35" rx="6" ry="10" fill="#c4a35a"/>
+            <ellipse cx="90" cy="55" rx="6" ry="10" fill="#c4a35a" transform="rotate(30 90 55)"/>
+            <ellipse cx="15" cy="75" rx="6" ry="10" fill="#c4a35a" transform="rotate(-20 15 75)"/>
+            <ellipse cx="85" cy="95" rx="6" ry="10" fill="#c4a35a" transform="rotate(40 85 95)"/>
+            <ellipse cx="10" cy="115" rx="6" ry="10" fill="#c4a35a" transform="rotate(-30 10 115)"/>
+            <ellipse cx="90" cy="135" rx="6" ry="10" fill="#c4a35a" transform="rotate(20 90 135)"/>
+            <circle cx="50" cy="180" r="4" fill="#c4a35a"/>
+            <circle cx="45" cy="160" r="3" fill="#c4a35a"/>
+            <circle cx="55" cy="170" r="3" fill="#c4a35a"/>
+        </svg>
+    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Raigal Danza" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="compania.html" class="nav-link">Quiénes somos</a></li>
+                <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="eventos.html" class="nav-link active">Eventos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="height: 60vh; background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('images/company/fondo.jpg') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Próximos <span>Eventos</span></h1>
+            <p>No te pierdas ninguna función</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title fade-in">Próximas <span>Funciones</span></h2>
+        <div class="events-timeline">
+            <div class="event-card fade-in">
+                <div class="event-date">
+                    <div class="day">15</div>
+                    <div class="month">May</div>
+                </div>
+                <div class="event-info">
+                    <h3>Noche de Primavera</h3>
+                    <p class="location">📍 Teatro Metropolitan, Ciudad</p>
+                    <p class="time">⏰ 20:00 hrs - Entrada general $500</p>
+                </div>
+            </div>
+            <div class="event-card fade-in">
+                <div class="event-date">
+                    <div class="day">28</div>
+                    <div class="month">May</div>
+                </div>
+                <div class="event-info">
+                    <h3>Festival de Danza Urbana</h3>
+                    <p class="location">📍 Plaza Central</p>
+                    <p class="time">⏰ 18:00 hrs - Entrada libre</p>
+                </div>
+            </div>
+            <div class="event-card fade-in">
+                <div class="event-date">
+                    <div class="day">10</div>
+                    <div class="month">Jun</div>
+                </div>
+                <div class="event-info">
+                    <h3>Gala Benéfica "Danza por la Vida"</h3>
+                    <p class="location">📍 Auditórium Municipal</p>
+                    <p class="time">⏰ 19:30 hrs - Donación voluntaria</p>
+                </div>
+            </div>
+            <div class="event-card fade-in">
+                <div class="event-date">
+                    <div class="day">22</div>
+                    <div class="month">Jun</div>
+                </div>
+                <div class="event-info">
+                    <h3>Workshop: Introducción a la Danza Contemporánea</h3>
+                    <p class="location">📍 Studio Raigal, Calle Arts #123</p>
+                    <p class="time">⏰ 10:00 - 14:00 hrs - $300 por persona</p>
+                </div>
+            </div>
+            <div class="event-card fade-in">
+                <div class="event-date">
+                    <div class="day">05</div>
+                    <div class="month">Jul</div>
+                </div>
+                <div class="event-info">
+                    <h3>Raíces: Regreso a los escenarios</h3>
+                    <p class="location">📍 Teatro de la Ciudad</p>
+                    <p class="time">⏰ 20:30 hrs - Entradas desde $400</p>
+                </div>
+            </div>
+            <div class="event-card fade-in">
+                <div class="event-date">
+                    <div class="day">18</div>
+                    <div class="month">Jul</div>
+                </div>
+                <div class="event-info">
+                    <h3>Encuentro de Compañías</h3>
+                    <p class="location">📍 Centro Cultural</p>
+                    <p class="time">⏰ 17:00 hrs - Entrada libre</p>
+                </div>
+            </div>
+            <div class="event-card fade-in">
+                <div class="event-date">
+                    <div class="day">30</div>
+                    <div class="month">Jul</div>
+                </div>
+                <div class="event-info">
+                    <h3>Noche de Clausura - Temporada 2026</h3>
+                    <p class="location">📍 Teatro Metropolitan</p>
+                    <p class="time">⏰ 21:00 hrs - Funk $600</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title fade-in">Calendario <span>2026</span></h2>
+        <div class="about-grid">
+            <div class="about-card fade-in">
+                <h3>Mayo</h3>
+                <p style="color: #7a5c45;">2 eventos programados</p>
+                <ul style="margin-top: 1rem; color: #5c4033;">
+                    <li>• 15 - Noche de Primavera</li>
+                    <li>• 28 - Festival Danza Urbana</li>
+                </ul>
+            </div>
+            <div class="about-card fade-in">
+                <h3>Junio</h3>
+                <p style="color: #7a5c45;">2 eventos programados</p>
+                <ul style="margin-top: 1rem; color: #5c4033;">
+                    <li>• 10 - Gala Benéfica</li>
+                    <li>• 22 - Workshop</li>
+                </ul>
+            </div>
+            <div class="about-card fade-in">
+                <h3>Julio</h3>
+                <p style="color: #7a5c45;">3 eventos programados</p>
+                <ul style="margin-top: 1rem; color: #5c4033;">
+                    <li>• 05 - Raíces</li>
+                    <li>• 18 - Encuentro</li>
+                    <li>• 30 - Clausura</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="text-align: center;">
+        <h2 class="section-title fade-in">¿Quieres <span>Contratarnos</span>?</h2>
+        <p class="fade-in" style="max-width: 600px; margin: 0 auto 2rem; color: #7a5c45;">
+            Ofrecemos funciones privadas, eventos corporativos, bodas y todo tipo de celebraciones. 
+            Contáctanos para recibir información sobre precios y disponibilidad.
+        </p>
+        <a href="contacto.html" class="btn fade-in">Solicitar Información</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">Raigal Danza</div>
+                    <p>RAIGAL PULSE S.L</p>
+                    <p style="margin-top: 0.5rem;">Creando arte a través del movimiento</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="compania.html">Quiénes somos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/ciaraigaldanza" target="_blank" title="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Raigal Danza. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
