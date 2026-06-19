@@ -235,8 +235,8 @@ ul {
     font-weight: 700;
     margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease;
-    color: var(--white);
-    line-height: 1.2;
+    color: #f5e9c8; /* ocre muy claro */
+    text-shadow: 0 4px 12px rgba(0,0,0,0.8);
 }
 
 .hero h1 span {
@@ -245,7 +245,8 @@ ul {
 
 .hero p {
     font-size: 1.2rem;
-    color: var(--brown-light);
+    color: #e0d4b8;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
     margin-bottom: 2.5rem;
     animation: fadeInUp 1s ease 0.3s both;
 }
