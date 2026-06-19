@@ -218,9 +218,9 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
+    background:
         radial-gradient(circle at 20% 80%, rgba(0, 0, 0, 0.4) 0%, transparent 40%),
-        radial-gradient(circle at 80% 20%, rgba(139, 106, 59, 0.08) 0%, transparent 40%);
+        radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.4) 0%, transparent 40%);
     pointer-events: none;
 }
 
